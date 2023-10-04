@@ -47,6 +47,8 @@ public class KnowYourIde {
     Back/Forward (Ctrl+Alt+Left/Right)
     Next/Previous method (Alt+Up/Down)
     Split and move right
+    Find usages
+    Analyze data flow to here (printUppercaseBrandToConsole)
 
     IDE sections & actions:
     - project explorer (Alt+1)
@@ -174,7 +176,7 @@ public class KnowYourIde {
     move statement up/down (Ctrl+Shift+Up/Down)
     move line up/down (Alt+Shift+Up/Down
     change case (Ctrl+Shift+U)
-    - org.acme.edu.KnowYourIde.Foo
+    - org.acme.edu.KnowYourIde.TypeEnum
     column selection mode (
     introduce variable/constant (Ctrl+Shift+V/M)
     extract method (Ctrl+Shift+M)
@@ -231,8 +233,8 @@ public class KnowYourIde {
      */
     // endregion
 
-    public void methodThrowingException(TypeEnum type){
-        carService.doSomeWorkOnBrokenCar(new CarService.Car(UUID.randomUUID(), null, "model"));
+    public void methodThrowingException(TypeEnum type, String param) {
+        carService.doSomeWorkOnBrokenCar(new CarService.Car(UUID.randomUUID(), null, "model"), param);
     }
 
     // region Utils

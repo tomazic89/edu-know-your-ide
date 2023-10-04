@@ -42,12 +42,12 @@ public class CarService {
         log.info("repairing a car: {}", car);
     }
 
-    public void doSomeWorkOnBrokenCar(Car model) {
-        model.printUppercaseBrandToConsole();
+    public void doSomeWorkOnBrokenCar(Car model, String param) {
+        model.printUppercaseBrandToConsole(param);
     }
 
     public record Car(UUID vin, String brand, String model) {
-        public void printUppercaseBrandToConsole() {
+        public void printUppercaseBrandToConsole(String param) {
             System.out.println(brand.toUpperCase());
         }
     }
