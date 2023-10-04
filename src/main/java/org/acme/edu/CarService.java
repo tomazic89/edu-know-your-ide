@@ -43,6 +43,7 @@ public class CarService {
     }
 
     public void doSomeWorkOnBrokenCar(Car model) {
+
         model.printUppercaseBrandToConsole();
     }
 
