@@ -60,6 +60,7 @@ public class KnowYourIde {
     - pull (Ctrl+Alt+2)
     - branches (Ctrl+Alt+3)
     - commit (Ctrl+k)
+    - push (Ctrl+Alt+W)
      */
     // endregion
     @Inject
