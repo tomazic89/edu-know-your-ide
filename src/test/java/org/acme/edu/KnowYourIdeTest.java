@@ -23,6 +23,6 @@ class KnowYourIdeTest {
 
     @Test
     void methodThrowingException() {
-        knowYourIde.methodThrowingException();
+        knowYourIde.methodThrowingException(KnowYourIde.TypeEnum.foobar);
     }
 }

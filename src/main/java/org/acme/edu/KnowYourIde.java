@@ -197,7 +197,7 @@ public class KnowYourIde {
         return 0.5 * (base1 + base2) * height;
     }
 
-    public enum Foo {
+    public enum TypeEnum {
         foo,
         bar,
         foobar
@@ -227,10 +227,11 @@ public class KnowYourIde {
     code coverage
     database integration (core directory)
     github integration (core directory)
+    debug (conditional)
      */
     // endregion
 
-    public void methodThrowingException(){
+    public void methodThrowingException(TypeEnum type){
         carService.doSomeWorkOnBrokenCar(new CarService.Car(UUID.randomUUID(), null, "model"));
     }
 
