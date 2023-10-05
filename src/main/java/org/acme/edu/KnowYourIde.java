@@ -21,7 +21,7 @@ public class KnowYourIde {
 
     // region IDE Setup
     // @formatter:off
-    public record RecordWithManyArgumentsWhichYouWantInOneLine(String var1, String var2, String var3, String var4, String var5, String var6) {}
+    public record RecordWithManyArgumentsWhichYouWantInOneLine(String name, String surname, String description, int position, TypeEnum type, boolean enabled) {}
     // @formatter:on
     // endregion
 
@@ -44,11 +44,18 @@ public class KnowYourIde {
     last edited location (Ctrl+Shift+Backspace)
     Next highlighted error (F2)
     Search (F3)
+    Quick documentation (Ctrl+Q)
+    Show parameters list (Ctrl+P)
+    */
+    // RecordWithManyArgumentsWhichYouWantInOneLine var = new RecordWithManyArgumentsWhichYouWantInOneLine();
+    /*
+    Go to Declaration or usages (Ctrl+B)
     Back/Forward (Ctrl+Alt+Left/Right)
     Next/Previous method (Alt+Up/Down)
     Split and move right
     Find usages
     Analyze data flow to here (printUppercaseBrandToConsole)
+
 
     IDE sections & actions:
     - project explorer (Alt+1)
@@ -209,6 +216,7 @@ public class KnowYourIde {
     // region Autocomplete
     /*
     autocomplete (Ctrl+Space)
+    - psvm, psf*
     - autocomplete from project
     - autocomplete line (Ctrl+Shift+Enter)
     - autocomplete from third party library
@@ -230,6 +238,7 @@ public class KnowYourIde {
     database integration (core directory)
     github integration (core directory)
     debug (conditional)
+    changelists (core-directory)
      */
     // endregion
 
